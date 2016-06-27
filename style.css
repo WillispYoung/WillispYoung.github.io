@@ -1,3 +1,21 @@
 body{
-	background: background.jpg;
+	background-image: URL("background.jpg");
+	background-repeat: no-repeat;
+	position: center;
+}
+
+#container{
+	width: 1000px;
+	height:200px;
+	margin: auto;
+	background-color: #aaaaaa;
+	opacity: 0.8;
+}
+
+#img{
+	width: 200px;
+	height: 130px;
+	margin: auto;
+	background-image: URL("praise the sun.jpg");
+	background-repeat: no-repeat;
 }
