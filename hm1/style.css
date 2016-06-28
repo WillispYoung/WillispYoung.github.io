@@ -40,8 +40,9 @@ div h2{
 }
 
 #edit{
-	width: 1010px;
+	width: 600px;
 	height: 400px;
+	margin: auto;
 }
 
 #footer{
