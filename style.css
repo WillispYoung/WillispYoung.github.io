@@ -1,51 +1,35 @@
-body{
-	background-color: #ccc;
-}
+body{ background-color: #ccc; }
 
-div h2{
-	text-align: center;
-	line-height: 60px;
-	cursor: pointer;
+h1{ line-height: 100px; }
+
+li{ list-style-type: none; text-align: center;}
+
+a{ text-decoration: none; line-height: 50px; }
+
+li div{
+	font-size: 20px;
+	border-radius: 10px;
+	border: 4px solid #678;
+	height: 50px;
+	background-color: #abc;
 }
 
 #header{
-	width: 1020px;
+	width: 80%;
 	height: 100px;
 	margin: auto;
-}
-
-.item{
-	border: 4px solid #abc;
-	float: left;
-	width: 197px;
-	height: 100px;
-	background-color: #bcd;
-}
-
-.item:hover{
-	color: #0aa;
-}
-
-#img{
-	height: 180px;
-	border: 0;
-	background-image: URL("praise_the_sun.jpg");
+	background-image: URL("header.jpg");
 }
 
 #content{
-	width: 1010px;
+	width: 80%;
 	height: 500px;
 	margin: auto;
 	background-color: #ddd;
 }
 
-#edit{
-	width: 1010px;
-	height: 400px;
-}
-
 #footer{
-	width: 1020px;
+	width: 100%;
 	bottom: 0px;
 	margin: auto;
 }
