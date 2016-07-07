@@ -28,7 +28,7 @@ function getMessage(){
  }
 
  function pushUserMessage(data){
- 	if(document.getElementsByClassName("content").length == msg_num_limit){
+ 	if(document.getElementsByClassName("content").length >= msg_num_limit){
  		moveMessage();
  		var first_msg = document.getElementsByClassName("content")[0];
  		first_msg.parentNode.removeChild(first_msg);
@@ -42,9 +42,9 @@ function getMessage(){
 
  function pushAdminMessage(data){
  	time_counter = 0;
- 	document.getElementById('admin').innerHTML = '<marquee behavior="slide" direction=left>' + data["content"] + '</marquee>';
+ 	document.getElementById('admin').innerHTML = '<marquee behavior="scroll" direction=left scrollamount="20">' + data["content"] + '</marquee>';
  }
 
  function moveMessage(){
-	$('.content').animate({top: '-110px'}, "slow");
+	$('.content').animate({top: '-110px'});
  }
