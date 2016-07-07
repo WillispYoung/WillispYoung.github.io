@@ -9,7 +9,7 @@ function getMessage(){
 			document.getElementById('admin').innerHTML = "";
 	}, 1000);
 
-	$.get('https://wall.cgcgbcbc.com/api/messages', {num: 5}, function(data){
+	$.get('https://wall.cgcgbcbc.com/api/messages', {num: msg_num_limit}, function(data){
   			for(var i=0;i < 5;i ++){
   				pushUserMessage(data[i]);
   		}
